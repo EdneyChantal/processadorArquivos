@@ -31,10 +31,13 @@ public class ScriptBancoFileProcessar extends  FileProcessar{
 
     }
 
+
     @Override
-    public void acaoNaoProcessou() {
+    public void acaoNaoProcessou(Exception e) {
 
     }
+
+
 
     @Override
     public void acaoNoFinal() {

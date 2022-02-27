@@ -45,7 +45,7 @@ public class ScritFileProcessar extends FileProcessar{
     }
 
     @Override
-    public void acaoNaoProcessou() {
+    public void acaoNaoProcessou(Exception e) {
 
     }
 

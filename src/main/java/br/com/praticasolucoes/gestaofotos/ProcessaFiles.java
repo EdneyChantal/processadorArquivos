@@ -8,7 +8,8 @@ import java.nio.file.*;
 public class ProcessaFiles {
     public static void main(String[] args) throws Exception {
       //executar(ScritFileProcessar.class);
-      executar(ScriptBancoFileProcessar.class);
+      //executar(ScriptBancoFileProcessar.class);
+        executar(FotoFileProcessar.class);
     }
 
     public static void executar(Class<?extends FileProcessar> classFileProcessar) throws Exception  {
@@ -26,7 +27,7 @@ public class ProcessaFiles {
                 fotoFile.processa();
                 fotoFile.acaoProcessou();
             } catch (IOException e) {
-                fotoFile.acaoNaoProcessou();
+                fotoFile.acaoNaoProcessou(e);
             }
         }
         fileProcessar.acaoNoFinal();

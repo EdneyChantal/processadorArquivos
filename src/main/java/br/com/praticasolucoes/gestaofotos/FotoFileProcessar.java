@@ -38,8 +38,8 @@ public class FotoFileProcessar extends FileProcessar {
     }
 
     @Override
-    public void acaoNaoProcessou() {
-        System.out.println("não processou " + this.getFile().getName());
+    public void acaoNaoProcessou(Exception e) {
+        System.out.println("não processou " + this.getFile().getName() + " " + e.getMessage());
     }
 
     @Override

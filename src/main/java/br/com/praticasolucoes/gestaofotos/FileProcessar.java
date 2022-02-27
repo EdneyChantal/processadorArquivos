@@ -31,7 +31,7 @@ public abstract class FileProcessar {
         return forigem;
     }
     public abstract void acaoProcessou();
-    public abstract void acaoNaoProcessou();
+    public abstract void acaoNaoProcessou(Exception e);
     public abstract void acaoNoFinal();
 
     public FileSystem getFileSystem() {
